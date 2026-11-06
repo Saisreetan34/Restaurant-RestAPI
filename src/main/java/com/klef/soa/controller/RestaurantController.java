@@ -95,9 +95,9 @@ public class RestaurantController
         return ResponseEntity.status(200).body(restaurants);
     }
 
-    // Restaurant Count
+    // Restaurant Count 
     @GetMapping("/count")
-    public ResponseEntity<String> restaurantCount()
+    public ResponseEntity<String> restaurantCount() 
     {
         Long count = service.restaurantCount();
         String msg = "Total Restaurants = " + count;
